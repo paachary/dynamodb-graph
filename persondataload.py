@@ -4,6 +4,8 @@ with open('data.json') as f:
     data = json.load(f)
     #print(data)
 
-    for records in data['persons']:
-        for key, value in records.items():
-            print(key,":",value)
+    print(len(data['persons']))
+
+    for count in range(0,len(data['persons'])-1):
+        for key,value in data['persons'][count].items():
+            print(key, value)
