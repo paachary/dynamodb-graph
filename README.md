@@ -13,6 +13,10 @@ Note that I have used [Dynamodb Local setup](https://docs.aws.amazon.com/amazond
 ### Configuring AWS
 Configure your AWS access key and secret access key along with the desired region.
 
+### Installing boto3 library for python
+```python
+pip install boto3
+```
 ### Creating the dynamodb table
 Execute createtable.sh script.
 
@@ -23,13 +27,21 @@ The script creates a table and a Global Secondary Index.
 ```javascript
 sh createtable.sh
 ```
-### Loading data into the dynamodb table
+
+### Verify the table in AWS (assumes that you are running this command in local environment)
+```python
+aws dynamodb describe-table --table-name person_graph_data --endpoint-url http://localhost:8000
+```
+
+### Loading data into the dynamodb table (assumes that you are running this command in local environment)
+```python
 Execute the python script: 
 ```python
 python main.py
 ```
 
-## Querying the data using Table's PK and Global Secondary Index
+## Querying the data using Table's PK and Global Secondary Index (assumes that you are running this command in local environment)
+```python
 ```python
 python query_graph_data.py
 ```
