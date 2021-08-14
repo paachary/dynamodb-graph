@@ -38,6 +38,8 @@ Execute the python script:
 ```python
 python main.py
 ```
+This script refers to [data.json](https://github.com/paachary/dynamodb-graph/blob/master/data.json) under the same directory for loading data into the person_graph_data table.
+
 
 ## Querying the data using Table's PK and Global Secondary Index (assumes that you are running this command in local environment)
 ```python
