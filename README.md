@@ -34,14 +34,12 @@ aws dynamodb describe-table --table-name person_graph_data --endpoint-url http:/
 ```
 
 ### Loading data into the dynamodb table (assumes that you are running this command in local environment)
-```python
 Execute the python script: 
 ```python
 python main.py
 ```
 
 ## Querying the data using Table's PK and Global Secondary Index (assumes that you are running this command in local environment)
-```python
 ```python
 python query_graph_data.py
 ```
