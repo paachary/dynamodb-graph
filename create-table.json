@@ -1,0 +1,52 @@
+{
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "node",
+            "AttributeType": "S"
+        },
+        {
+            "AttributeName": "sk",
+            "AttributeType": "S"
+        }
+    ],
+    "TableName": "person_graph_data",
+    "KeySchema": [
+        {
+            "AttributeName": "node",
+            "KeyType": "HASH"
+        },
+        {
+            "AttributeName": "sk",
+            "KeyType": "RANGE"
+        }
+    ],
+    "GlobalSecondaryIndexes": [
+        {
+            "IndexName": "gsi_1",
+            "KeySchema": [
+                {
+                    "AttributeName": "sk",
+                    "KeyType": "HASH"
+                }
+            ],
+            "Projection": {
+                "ProjectionType": "ALL"
+            },
+            "ProvisionedThroughput": {
+                "ReadCapacityUnits": 5,
+                "WriteCapacityUnits": 5
+            }
+        }
+    ],
+    "BillingMode": "PROVISIONED",
+    "ProvisionedThroughput": {
+        "ReadCapacityUnits": 5,
+        "WriteCapacityUnits": 5
+    },
+    "Tags": [
+        {
+            "Key": "Team",
+            "Value": "TimePass"
+        }
+    ]
+}

@@ -1,5 +1,19 @@
 {
   "persons": [
+   {
+      "node":"Goofy",
+        "name": "Goofy",
+        "born_dt": "2019-07-04",
+        "gender": "Male",
+        "personal_traits": [
+          "Jumping",
+          "Chewing bones"
+        ],
+        "type": [
+          "Animal"
+        ],
+        "belongs_to": "Mike"
+    },
     {
       "node":"Tim",
         "name": "Timothy Dalton",
@@ -58,22 +72,11 @@
           "Hard-working",
           "Cat-Lover"
         ],
-        "pet": "Goofy",
         "type": [
           "Associate",
           "Person"
         ],
-        "friend": "Sam",
         "reports_to": "Tim"
-    },
-    {
-      "node":"Goofy",
-        "name": "Goofy",
-        "born_dt": "2019-07-04",
-        "gender": "Male",
-        "type": [
-          "Animal"
-        ]
     }
   ]
 }
