@@ -29,7 +29,7 @@ Execute the python script:
 python main.py
 ```
 
-### Querying the data using Table's PK and Global Secondary Index
+## Querying the data using Table's PK and Global Secondary Index
 ```python
 python query_graph_data.py
 ```
