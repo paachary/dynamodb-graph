@@ -2,11 +2,11 @@
 
 This repository demonstrates the design pattern in Dynamodb to store Many-to-Many Relationships using the Adjacency List Design Pattern.
 
-For this, we are using a simple graphical representation of data shown in the attached jpeg file.
+For this, we are using a simple graphical representation of data shown below: ![alt text](https://github.com/paachary/dynamodb-graph/blob/master/RDF-Graph-Representation-Person-Example.jpg "attached jpeg file link")
 
 The dynamodb table consists of the PK (node) and SK (sk). It also has a global secondary index (gs_1) with "sk" as the PK.
 
-Note that I have used [Dynamodb Local setup link](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html) for testing this code.
+Note that I have used [Dynamodb Local setup](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html) for testing this code.
 
 ## Setting up the data
 
